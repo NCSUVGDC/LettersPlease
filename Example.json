@@ -1,0 +1,122 @@
+{
+    /* Deeds have 5 types Letter and reports should "assume" that the child is good
+     * If the child is bad then the adverbs are inverted in code*/
+    "Deed": {
+        "Sibling": [
+            {
+                "Letter": "I {PosA} really nice to my {Sibling} this year",
+                "Report": "They {NegA} argued with their {Sibling}",
+                "Exception": false
+            },
+            {
+                /* TODO: Check with Alberto, because grammar on this one is wierd given
+                 * how the lists are currently done.*/
+                "Letter": "I am sorry for hitting my {Sibling} one time",
+                "Report": "They {PosA} hit their {Sibling}",
+                "Exception": true
+            }
+        ],
+        "Pet": [
+            {
+                "Letter": "I made sure to give my pet {Pet} lots of love",
+                "Report": "They {PosA} fed the pet",
+                "Exception": false
+            }
+        ],
+        "Parent": [
+            {
+                "Letter": "I made sure to help {Parent} with chores",
+                "Report": "They {PosA} {Chore} when asked",
+                "Exception": false
+            }
+        ],
+        "Friend": [
+            {
+                "Letter": "I made my friends happy when they were sad",
+                "Report": "They {PosA} cheered up their friends",
+                "Exception": false
+            }
+        ],
+        "Misc": [
+            {
+                "Letter": "I made sure to not talk back",
+                "Report": "They {NegA} talked bad",
+                "Exception": false
+            },
+            {
+                "Letter": "I went to bed on time",
+                "Report": "They {PosA} went to be on time",
+                "Exception": false
+            },
+            {
+                "Letter": "I made sure to say please and thank you",
+                "Report": "They had {PosV} manners",
+                "Exception": false
+            }
+        ]
+    },
+    /* For all sections past this point there are 3 lists defining the misspellings
+     * of each word for the diffeent difficulties*/
+    "Verb": {
+        /*"Positive" versions of adverbs*/
+        "PosA": [
+            ["always"],
+            ["all ways"],
+            ["ulwaz"]
+        ],
+        /*"Negative" versions of adverbs*/
+        "NegA": [
+            ["never"],
+            ["nevor"],
+            ["nefr"]
+        ],
+        "PosV" : [
+            [],
+            [],
+            []
+        ],
+        "NegV" : [
+            [],
+            [],
+            []
+        ]
+    },
+    "Sibling": [
+        [
+            "brother", "sister"
+        ],
+        [
+            "bruver", "saster"
+        ],
+        [
+            "bufr", "sustr"
+        ]
+    ],
+    "Pet": [
+        [
+            "dog",
+            "cat",
+            "bird",
+            "hamster",
+            "bunny",
+            "lizard"
+        ],
+        []
+    ],
+    "Chore": [
+        ["cleaned the dishes",
+        "helped around the house"],
+        []
+    ],
+    "Parent": [
+        [
+            "Mom",
+            "Dad",
+            "Uncle",
+            "Aunt",
+            "Grandma",
+            "Grandpa"
+        ],
+        []
+    ]
+}
