@@ -3,7 +3,7 @@ using System.Text.Json;
 namespace letterConfig {
 
     class Generator {
-        public (Letter letter, Report report) get(int difficulty, int presents, Child child) {
+        public (Letter letter, Report report, Recon recon) get(int difficulty, int presents, Child child) {
             //TODO: Figure out how I want to generate them
         }
     }
@@ -36,6 +36,12 @@ namespace letterConfig {
         
         public report() {
         }
+    }
+
+    class Recon {
+        string cookiePath;
+        int numCookies;
+        CookieType cookie; //TODO: Come up with cookieType
     }
 
     // Because I'm supremely lazy it's being generated using a tool online
