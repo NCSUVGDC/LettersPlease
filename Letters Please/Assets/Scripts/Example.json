@@ -55,6 +55,14 @@
             }
         ]
     },
+    "Cookies": {
+        "Approved" : [
+
+        ],
+        "Disaproved" : [
+
+        ]
+    },
     /* For all sections past this point there are 3 lists defining the misspellings
      * of each word for the diffeent difficulties*/
     "Verb": {
